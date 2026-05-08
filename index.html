@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>我的文件分享页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #007bff;
+        }
+        .file-list {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        a {
+            display: block;
+            color: #007bff;
+            text-decoration: none;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>📁 我的文件分享</h1>
+    <p>点击下方链接下载文件：</p>
+    <div id="file-list" class="file-list">
+        <!-- 在这里添加你的文件链接 -->
+    </div>
+
+    <script>
+        // 设置你要分享的文件列表
+        // 格式：{ name: "显示的名字", url: "文件在仓库里的路径" }
+        const files = [
+            // 举例：如果你上传了 数据.xlsx 到仓库根目录，就改成下面这样
+            // { name: "数据表.xlsx", url: "数据.xlsx" },
+            // { name: "使用手册.pdf", url: "手册.pdf" }
+        ];
+
+        const fileListDiv = document.getElementById('file-list');
+        if (files.length === 0) {
+            fileListDiv.innerHTML = '<p>暂无文件，请稍后再来。</p>';
+        } else {
+            files.forEach(file => {
+                const link = document.createElement('a');
+                link.href = file.url;
+                link.download = file.url;
+                link.textContent = `📄 ${file.name}`;
+                fileListDiv.appendChild(link);
+            });
+        }
+    </script>
+</body>
+</html>
