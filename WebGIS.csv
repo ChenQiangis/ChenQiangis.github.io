@@ -1,0 +1,19 @@
+类别,关键词,简要说明
+基础语言,HTML/CSS,网页结构与样式
+基础语言,JavaScript(ES6+),WebGIS核心编程语言（必须深入）
+基础语言,异步编程(Promise/async),处理地图数据请求
+核心库,Leaflet,轻量级WebGIS库，适合入门
+核心库,OpenLayers,功能全面的工业级WebGIS库
+核心库,Mapbox GL JS,高性能矢量切片与三维地图
+核心库,ArcGIS API for JavaScript,ESRI生态的Web开发接口
+服务端与数据,GeoServer,开源地图服务器（发布WMS/WFS）
+服务端与数据,PostgreSQL/PostGIS,开源空间数据库核心
+服务端与数据,WMS/WFS/WMTS,OGC标准地图服务协议
+服务端与数据,GeoJSON,Web前端最常用的矢量数据格式
+服务端与数据,矢量切片(Vector Tiles),高性能地图数据加载技术
+前端框架,Vue3,国内WebGIS项目常用前端框架
+前端框架,React,生态更庞大的前端框架
+工程化,Git/GitHub,版本控制与代码托管
+工程化,VS Code,主力代码编辑器
+进阶方向,CesiumJS,三维WebGIS/数字孪生
+进阶方向,WebGL,底层三维图形渲染技术
